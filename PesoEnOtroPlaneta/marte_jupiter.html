@@ -23,27 +23,17 @@
       if (planeta == 1)
       {
         peso_final = peso * g_marte / g_tierra;
-      }
-      else if (planeta == 2)
-      {
-        peso_final = peso * g_jupiter / g_tierra;
-      }
-      else
-      {
-        peso_final = 1000000;
-      }
-
-      if (planeta == 1)
-      {
         opcion_planeta = "Marte";
       }
       else if (planeta == 2)
       {
+        peso_final = peso * g_jupiter / g_tierra;
         opcion_planeta = "Jupiter";
       }
       else
       {
-      opcion_planeta = "Krypton";
+        peso_final = 1000000;
+        opcion_planeta = "Krypton";
       }
 
       peso_final = parseInt(peso_final);
